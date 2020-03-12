@@ -21,7 +21,7 @@ const AuthorDetail = props => {
         </thead>
         <tbody>
           {props.author.books.map(book => (
-            <tr>
+            <tr key={book.title}>
               <td>{book.title}</td>
               <td>{props.author.first_name + " " + props.author.last_name}</td>
               <td>
